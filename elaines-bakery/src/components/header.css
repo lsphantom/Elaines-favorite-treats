@@ -1,0 +1,6 @@
+.site-header{backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.45));box-shadow:var(--shadow);border-bottom-left-radius:var(--radius-lg);border-bottom-right-radius:var(--radius-lg);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{display:flex;gap:0.8rem;align-items:center}
+.logo-badge{width:56px;height:56px;border-radius:14px;background:linear-gradient(180deg,var(--brown-700),var(--brown-500));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.nav a{margin-left:1rem;color:var(--brown-700)}
+.nav a.cta{background:var(--mocca);padding:.5rem .75rem;border-radius:10px;color:white}
