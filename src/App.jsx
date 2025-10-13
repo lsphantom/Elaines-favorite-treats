@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Featured from './components/Featured'
@@ -6,15 +7,20 @@ import { CartProvider } from './contexts/CartContext'
 import CartDrawer from './components/CartDrawer'
 
 function App() {
+  const [cartOpen, setCartOpen] = useState(false)
+
   return (
     <CartProvider>
       <div className="app-root">
-        <Header />
+        <Header onCartClick={() => setCartOpen(true)} />
         
         <Featured />
 
         <Footer />
-        <CartDrawer />
+        <CartDrawer 
+          isOpen={cartOpen} 
+          onClose={() => setCartOpen(false)} 
+        />
       </div>
     </CartProvider>
   )

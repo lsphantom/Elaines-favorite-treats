@@ -1,13 +1,13 @@
 import './productcard.css'
 import { useCart } from '../contexts/CartContext'
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, onAddToCart }) {
   const cart = useCart()
 
   function onAdd() {
     cart.add(product)
-    const el = document.getElementById('cart-drawer')
-    if (el) el.classList.add('open')
+    // Optional: you could call onAddToCart here if you want to show the cart drawer immediately
+    // onAddToCart && onAddToCart()
   }
 
   return (
@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
         <h3 className="product-title">{product.name}</h3>
         <p className="product-desc">{product.description}</p>
         <div className="product-row">
-          <div className="price">${product.price.toFixed(2)}</div>
+          <div className="price">{product.price.toFixed(2)}</div>
           <button className="btn small" onClick={onAdd}>Add</button>
         </div>
       </div>

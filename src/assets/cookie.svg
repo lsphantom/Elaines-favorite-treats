@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="640" height="400"><rect width="100%" height="100%" rx="20" fill="#fffaf6"/><g transform="translate(60,40)"><circle cx="80" cy="60" r="50" fill="#d9c3b1"/><circle cx="100" cy="70" r="6" fill="#5b3b2e"/><circle cx="60" cy="60" r="6" fill="#5b3b2e"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="cookie1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#D2B48C"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#FAF8F5"/>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="210" rx="85" ry="8" fill="#D2B48C" opacity="0.3"/>
+  <!-- Cookie base -->
+  <circle cx="200" cy="150" r="80" fill="url(#cookie1)"/>
+  <!-- Chocolate chips -->
+  <circle cx="180" cy="130" r="8" fill="#8B4513"/>
+  <circle cx="220" cy="140" r="8" fill="#8B4513"/>
+  <circle cx="190" cy="170" r="8" fill="#8B4513"/>
+  <circle cx="225" cy="165" r="8" fill="#8B4513"/>
+  <circle cx="210" cy="120" r="8" fill="#8B4513"/>
+  <circle cx="170" cy="160" r="8" fill="#8B4513"/>
+  <!-- Cookie texture -->
+  <circle cx="200" cy="150" r="75" fill="none" stroke="#CD853F" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="150" r="65" fill="none" stroke="#CD853F" stroke-width="1" opacity="0.2"/>
+</svg>

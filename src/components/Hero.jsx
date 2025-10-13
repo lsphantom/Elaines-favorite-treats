@@ -3,17 +3,23 @@ import './hero.css'
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="container hero-inner">
+      <div className="hero-background" style={{ backgroundImage: 'url(./stock/croissants.jpg)', backgroundPosition: 'center center', backgroundSize: 'cover' }}>
+        <div className="hero-overlay"></div>
+      </div>
+      <div className="container hero-content text-left">
         <div className="hero-text">
-          <h1>Elaine's Favorite Treats</h1>
-          <p className="lede">Warm, elegant, and indulgent — discover pastries made with fine chocolate and a touch of love.</p>
+          <h1 className="hero-title">
+            Bite into Happiness<br />
+            <span className="hero-subtitle">Savor the Sweetness</span>
+          </h1>
+          <p className="hero-description">
+            Experience the finest handcrafted pastries, cakes, and confections made with premium ingredients and a passion for perfection.
+          </p>
           <div className="hero-actions">
-            <a className="btn primary" href="#favorites">Shop Favorites</a>
-            <a className="btn ghost" href="#about">Learn More</a>
+            <a href="#products" className="btn btn-primary">
+              Get Started
+            </a>
           </div>
-        </div>
-        <div className="hero-image" aria-hidden>
-          <div className="cupcake" />
         </div>
       </div>
     </section>

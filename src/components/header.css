@@ -1,6 +1,120 @@
-.site-header{backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.45));box-shadow:var(--shadow);border-bottom-left-radius:var(--radius-lg);border-bottom-right-radius:var(--radius-lg);}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-.brand{display:flex;gap:0.8rem;align-items:center}
-.logo-badge{width:56px;height:56px;border-radius:14px;background:linear-gradient(180deg,var(--brown-700),var(--brown-500));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
-.nav a{margin-left:1rem;color:var(--brown-700)}
-.nav a.cta{background:var(--mocca);padding:.5rem .75rem;border-radius:10px;color:white}
+.site-header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.brand .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav a:hover {
+  color: var(--text-primary);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-brown);
+  transition: width 0.2s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.cart-btn:hover {
+  color: var(--accent-brown);
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+}
+
+.cart-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: var(--accent-brown);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  
+  .header-inner {
+    padding: 0.75rem 0;
+  }
+  
+  .logo-text {
+    font-size: 1.75rem;
+  }
+}
