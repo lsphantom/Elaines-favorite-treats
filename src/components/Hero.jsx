@@ -13,7 +13,7 @@ export default function Hero() {
             <span className="hero-subtitle">Savor the Sweetness</span>
           </h1>
           <p className="hero-description">
-            Experience the finest handcrafted pastries, cakes, and confections made with premium ingredients and a passion for perfection.
+            Experience the finest handcrafted pastries, cakes, and confections made with premium ingredients and a passion for perfection. Best sweet treats you will find in the north Denver area.
           </p>
           <div className="hero-actions">
             <a href="#products" className="btn btn-primary">
